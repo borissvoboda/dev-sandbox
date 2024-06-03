@@ -1,0 +1,16 @@
+{
+  "name": "node-jsr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@hono/hono": "npm:@jsr/hono__hono@^4.4.3",
+    "@std/fmt": "npm:@jsr/std__fmt@^0.225.3"
+  }
+}
