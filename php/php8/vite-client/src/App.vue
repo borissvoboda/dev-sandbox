@@ -5,7 +5,7 @@ import Card from './components/Card.vue';
 
 <template>
   <div>
-    <Card title="Card 1"> </Card>
+    <Card v-for="n in 10" :key="n" :title="'Card ' + n"> </Card>
   </div>
 </template>
 
