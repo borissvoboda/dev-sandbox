@@ -1,7 +1,10 @@
 <?php
-    $data = "{data: 'data'}";
+$data = "{data: 'data'}";
 
-    header('Content-Type: application/json; charset=utf-8');
-    echo json_encode($data);
+$usersUrl = 'dummydata/users.json';
+$users = file_get_contents($usersUrl);
+
+header('Content-Type: application/json; charset=utf-8');
+echo json_encode($users);
 
 ?>

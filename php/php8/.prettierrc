@@ -1,0 +1,14 @@
+{
+    "singleQuote": true,
+    "tabWidth": 4,
+    "useTabs": true,
+    "printWidth": 80,
+    "semi": true,
+    "trailingComma": "all",
+    "editor.formatOnSave": true,
+    "[php]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "plugins": ["@prettier/plugin-php"],
+    "inferredParser": "php"
+}

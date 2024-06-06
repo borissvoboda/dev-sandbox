@@ -1,4 +1,5 @@
 *ts/ts-node-express/node_modules/*
 *bun/bun-webserver/node_modules/*
 *node-jsr/node_modules/*
+*php/php8/node_modules/*
 
