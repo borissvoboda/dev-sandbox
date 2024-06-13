@@ -1,5 +1,8 @@
 *ts/ts-node-express/node_modules/*
+*ts/tutorial/8-115-Autobind/node_modules/*
+*ts/tutorial/9-dragdrop/node_modules/*
 *bun/bun-webserver/node_modules/*
 *node-jsr/node_modules/*
 *php/php8/node_modules/*
+*php/php8/php-backend/node_modules/*
 
