@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- canvas - space to draw onto.  -->
+    <canvas width="600" height="600"> </canvas>
+
+    <script>
+      let canvas = document.querySelector('canvas');
+      //  Canvas context? What is it? 2D od 3D
+      let context = canvas.getContext('2d');
+
+      context.fillStyle = 'blue';
+      // context.fillRect(100, 100, 400, 400);
+      //   // fillRect is a shortcut; it does 3 things:
+      //   // 1. creates a new shape
+      //   // 2. drawing rect
+      //   // 3. filling if w/ color
+
+      // more complex:
+      context.lineWidth = 5;
+      context.beginPath();
+      context.rect(100, 100, 400, 400);
+      context.stroke();
+
+      // circle
+      context.beginPath();
+      context.arc(300, 300, 100, 0, Math.PI * 2);
+      context.stroke();
+    </script>
+  </body>
+</html>
