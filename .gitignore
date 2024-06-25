@@ -5,4 +5,6 @@
 *node-jsr/node_modules/*
 *php/php8/node_modules/*
 *php/php8/php-backend/node_modules/*
-
+*ts/tutorial/9-study-app/node_modules/*
+*ts/tutorial/9-dragdrop-old/node_modules/*
+*js/js-visulisation-course/envForSketching/node_modules*
