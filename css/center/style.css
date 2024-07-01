@@ -1,0 +1,13 @@
+div#container {
+  width: 600px;
+  height: 600px;
+  background-color: blue;
+  text-align: center;
+  align-content: center;
+}
+
+#centeredItem {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
