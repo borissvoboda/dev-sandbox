@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- load scripts as soon as possible. If we load it here... it blocks parsing! -->
+    <!-- <script src="assets/script.js"></script> -->
+    <!-- solution is defer! -->
+    <!-- it starts downloading early, but it doesnt execute script; but executes only after they are downloaded and after parsing is finished -->
+    <script src="assets/script.js" defer></script>
+    <!-- Defer is preffered way -->
+    <!-- ---- -->
+    <!-- IF I want a script to lead early and also execute early - maybe that code -->
+    <!-- does not rely on... -->
+  </head>
+  <body>
+    <h1>...</h1>
+
+    <!-- we only requested scripts after parsing is done! -->
+    <script src="assets/script.js"></script>
+  </body>
+</html>
