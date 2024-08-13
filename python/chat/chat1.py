@@ -4,10 +4,14 @@ from tkinter import scrolledtext
 # Initialize the main window
 # Creating an instance of the Tk Class -> Tk class constructor.
 # root is the variable that holds the instance of Tk class
-
 root = tk.Tk()
+# root.title is the method for setting the title of the main window
 root.title("Chat Client")
-root.geometry("400x400")
+# root.geometry for setting the size and the position(???) of the main window
+# root.geometry("widthxheight+x_offset+y_offset")
+# root.geometry("500x300+600+200")
+# root.geometry("400x400")
+root.geometry("500x300+600+200")
 root.configure(bg='#f0f0f0')  # Light gray background
 
 # Modern font style
