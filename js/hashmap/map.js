@@ -15,3 +15,12 @@ console.log('Size: ', map.size);
 // clear the map
 map.clear();
 console.log('Size after clear: ', map.size);
+
+
+// Danger!
+// 
+
+const myMap = new Map<string, number>();
+for (const [key, value] of map) {
+    
+}
