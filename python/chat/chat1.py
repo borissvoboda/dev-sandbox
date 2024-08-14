@@ -17,7 +17,7 @@ root.configure(bg='#f0f0f0')  # Light gray background
 # Modern font style
 modern_font = ("Segoe UI", 10)
 
-# Create a Text widget with a modern look
+# Create a Text widget
 text_display = tk.Text(root, height=10, width=50, bg='#ffffff', fg='#333333', 
                        font=modern_font, bd=0, padx=10, pady=10)
 text_display.pack(padx=10, pady=10)
