@@ -19,16 +19,19 @@ def get_player_y_position():
     y = (coords[1] + coords[3]) / 2
     return y
 
+# Player config
+
+
 # Function to move the player
 def move_player(event):
     if event.keysym == 'Up' and get_player_y_position() > 12:
         canvas.move(player, 0, -10)
-    elif event.keysym == 'Down':
+    elif event.keysym == 'Down' and get_player_y_position() < SCREEN_HEIGHT -10:
         canvas.move(player, 0, 10)
     elif event.keysym == 'Left':
         if (get_player_x_position() > 12):
             canvas.move(player, -10, 0)
-    elif event.keysym == 'Right':
+    elif event.keysym == 'Right' and get_player_x_position() < SCREEN_WIDTH -10:
         canvas.move(player, 10, 0)
 
 
@@ -40,8 +43,12 @@ root.title("Arc")
 root.grid_rowconfigure(0, weight=1)
 root.grid_columnconfigure(0, weight=1)
 
+# Screen config
+SCREEN_WIDTH = 500
+SCREEN_HEIGHT = 400
+
 # Create a white canvas
-canvas = tk.Canvas(root, width=400, height=400, bg='white')
+canvas = tk.Canvas(root, width=SCREEN_WIDTH , height=400, bg='white')
 # canvas.pack()  # This was initally use to mng the layout of the canvas widget inside window
 # In tkinter there are several geometry managrs (pack, grid, place) - they should not be mixed in the same parent widget (root)
 canvas.grid(row=0, column=0)  # Place the canvas in the grid
