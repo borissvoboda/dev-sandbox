@@ -1,0 +1,20 @@
+// instead of
+
+.item {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// use inset = shorthand for top, right, bottom, left
+
+.item {
+  inset: 0;
+}
+
+// you can also use:
+
+.item {
+  inset: 10px 20px; /* top/bottom 10px , right/left 20px */
+}

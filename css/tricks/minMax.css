@@ -1,0 +1,19 @@
+// set width to the 50% of the parent element's width
+// min width ensures that the el's width will NOT go below 10rem, even if
+// even if 50% of the parent width is smaller than 10rem.
+
+.item {
+  width: 50%;
+  min-width: 10rem;
+}
+
+// this is equivalent to the following:
+// this sets the width between the 50% of the parent width and 10rem.
+
+.image {
+  width: max(50%, 10rem);
+}
+
+// The max() function in CSS allows you to specify a maximum value
+// from a list of expressions, and it picks the largest (or "maximum")
+// value as the result.

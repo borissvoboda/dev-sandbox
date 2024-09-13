@@ -1,0 +1,20 @@
+/* traditional way to scale elements in CSS, using the transform property with the scale() function.
+The scale() function scales the element by the provided factor. In this case, the element will be scaled to twice its original size.
+It is part of the transform property, which can also include other transformations like rotate(), translate(), etc.
+Browser Support: transform has wide browser support, including older browsers.
+*/
+
+.item {
+  transform: scale(2);
+}
+
+/* 
+This is a newer way to scale elements introduced in the CSS Transforms Level 2 specification (???).
+The scale property is shorthand for directly setting the scaling transformation. It is similar to using transform: scale(), but it's more specific and does not support other transformations like rotate or translate within the same declaration.
+Browser Support: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale
+
+*/
+
+.item {
+  scale: 2;
+}
