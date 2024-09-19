@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outFile": "./dist/bundle.js",
+    "outDir": "./dist", // Output directory for compiled JavaScript files
+    "rootDir": "./src", // Root directory of input TypeScript files
+    "target": "ES5", // JavaScript version to compile to
+    "module": "none", // No module system (since we're using namespaces)
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES Modules
+    "skipLibCheck": true // Skip type checking of declaration files
+  },
+  "include": [
+    "src/**/*" // Include all TypeScript files in the src directory
+  ]
+}
