@@ -4,7 +4,7 @@ import { json } from 'body-parser'; // will parse and extract
 
 import { Todo } from '../models/todos'; // class, automatically act as a type
 
-const TODOS = [];
+const TODOS: Todo[] = [];
 
 export const createTodo: RequestHandler = (req, res, next) => {
   const text = (req.body as { text: string }).text;
@@ -13,4 +13,8 @@ export const createTodo: RequestHandler = (req, res, next) => {
   TODOS.push(newTodo);
 
   res.status(201).json({ message: 'Created the todo.', crteatedTodo: newTodo });
+};
+
+export const getTodos: RequestHandler = (req, res, next) => {
+  res.json({ todos: TODOS });
 };
