@@ -67,6 +67,8 @@ async function fetchData3(url) {
 // The await keyword pauses the execution of the function at that point until the promise returned by fetch() resolves.
 // When the promise is resolved, the resolved value (in this case, the HTTP response object) is assigned to const response.
 
+// -----------------------------------
+
 // #region 4. structure the data
 
 async function fetchData4(url) {
@@ -83,8 +85,24 @@ fetchData4('https://jsonplaceholder.typicode.com/todos');
 // In general, for my app, I only need a fraction of that.
 // now the data const will contain the response body.
 
+// #region 5. try / catch
+
+// lets wrap logic in try / catch statements
+
+async function fetchData5(url) {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Error fetching data: ', error);
+  }
+}
+
+fetchData5('https://jsonplaceholder.typicode.com/todos');
+
 // -----------------------------------------------------------------------
-// #region 5. use data further
+// #region 6. use data further
 // If I want to use data further; example...
 
 // example 1:
