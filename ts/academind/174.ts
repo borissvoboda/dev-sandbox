@@ -26,3 +26,15 @@ declare var google: any; // in app.ts
 
 // Google documentation for maps
 // var marker = new google.maps.Marker...
+
+// ----
+
+// no errors but no type support. We want handle errors during dev.
+
+// npm => @types/googlemaps
+// npm install --save-dev @types/googlemaps
+// installs global types for this package
+// google.maps is now detected; I now have a autocomplete available.
+
+// axios - own types
+// in general you can find types for packages.
